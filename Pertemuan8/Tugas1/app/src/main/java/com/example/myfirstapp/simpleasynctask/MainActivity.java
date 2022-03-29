@@ -1,16 +1,12 @@
 package com.example.myfirstapp.simpleasynctask;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-/**
- * The SimpleAsyncTask app contains a button that launches an AsyncTask
- * which sleeps in the asynchronous thread for a random amount of time.
- */
+
 public class MainActivity extends AppCompatActivity {
 
     //Key for saving the state of the TextView
@@ -36,12 +32,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    /**`
-     * Handles the onCLick for the "Start Task" button. Launches the AsyncTask
-     * which performs work off of the UI thread.
-     *
-     * @param view The view (Button) that was clicked.
-     */
+
     public void startTask (View view) {
         // Put a message in the text view
         mTextView.setText(R.string.napping);
@@ -52,11 +43,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    /**
-     * Saves the contents of the TextView to restore on configuration change.
-     * @param outState The bundle in which the state of the activity is saved
-     * when it is spontaneously destroyed.
-     */
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
