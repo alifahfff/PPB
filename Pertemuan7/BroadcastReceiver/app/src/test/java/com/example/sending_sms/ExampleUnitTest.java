@@ -1,4 +1,4 @@
-package com.example.myfirstapp.sms;
+package com.example.sending_sms;
 
 import org.junit.Test;
 
